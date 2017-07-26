@@ -1,14 +1,14 @@
 package com.example;
 
-public class School {
+abstract public class School {
     String firstName;
     String lastName;
     String Id;
     int grade;
 
     public School() {
-        this.firstName = firstname;
-        this.lastName = lastname;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.Id = Id;
         this.grade = grade;
     }

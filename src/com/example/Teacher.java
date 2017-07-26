@@ -52,4 +52,29 @@ public class Teacher extends School {
     public void setGrade(int grade) {
         this.grade = grade;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Teacher)) return false;
+
+        Teacher teacher = (Teacher) o;
+
+        return Id.equals(teacher.Id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Id.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", Id='" + Id + '\'' +
+                ", grade=" + grade +
+                '}';
+    }
 }
